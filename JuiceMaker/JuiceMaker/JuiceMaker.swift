@@ -3,6 +3,7 @@
 //  Created by yagom.
 //  Copyright © yagom academy. All rights reserved.
 //
+
 import Foundation
 
 enum Fruit {
@@ -12,7 +13,7 @@ enum Fruit {
 enum Juice {
     case strawberry, banana, kiwi, pineapple, strawberryBanana, mango, mangokiwi
 
-    var recipe: [Fruit: Int] {
+    var recipe: [Fruit: UInt] {
         switch self {
         case .strawberry:
             return [.strawberry: 16]
@@ -32,32 +33,44 @@ enum Juice {
     }
 }
 
+enum JuiceMakerErorr: Error {
+    case outOfStock
+}
+
+struct Stock {
+    var fruits: [Fruit: UInt]
+    
+    init(initialAmount: UInt) {
+        fruits = [.strawberry: initialAmount, .banana: initialAmount, .kiwi: initialAmount, .pineapple: initialAmount, .mango: initialAmount]
+    }
+    
+    mutating func addStock(of fruit: Fruit) {
+        if let storedFruit = fruits[fruit] {
+            fruits[fruit] = storedFruit + 1
+        }
+    }
+    
+    mutating func subtractStock(of fruit: Fruit) {
+        if let storedFruit = fruits[fruit] {
+            fruits[fruit] = storedFruit - 1
+        }
+    }
+}
+
 class JuiceMaker {
-    private(set) var stock: [Fruit: Int] = [.strawberry: 10, .banana: 10, .kiwi: 10, .pineapple: 10, .mango: 10]
+    var stock: Stock = Stock(initialAmount: 10)
     
     func makeJuice(using juice: Juice) {
         for (ingredient, amount) in juice.recipe {
-            guard let storedFruit = stock[ingredient] else {
+            guard let storedFruit = stock.fruits[ingredient] else {
                 return
             }
             
             if storedFruit > amount {
-                stock[ingredient] = storedFruit - amount
+                stock.fruits[ingredient] = storedFruit - amount
             } else {
                 // 부족할 경우
             }
         }
     }
-    
-    func addStock(of fruit: Fruit) {
-        if let storedFruit = stock[fruit] {
-            stock[fruit] = storedFruit + 1
-        }
-    }
 }
-
-let kane: JuiceMaker = JuiceMaker()
-kane.makeJuice(using: .banana)
-print(kane.stock)
-kane.addStock(of: .banana)
-print(kane.stock)
