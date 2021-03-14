@@ -6,7 +6,11 @@
 
 import Foundation
 
-typealias FruitCount = [Fruit: Int]
+typealias FruitCount = [Fruit: FruitInformation]
+
+struct FruitInformation {
+    var count: Int
+}
 
 enum Fruit {
     case strawberry, banana, pineapple, kiwi, mango
@@ -18,52 +22,50 @@ enum Juice {
     var recipe: FruitCount {
         switch self {
         case .strawberry:
-            return [.strawberry: 16]
+            return [.strawberry: FruitInformation(count: 16)]
         case .banana:
-            return [.banana: 2]
+            return [.banana: FruitInformation(count: 2)]
         case .kiwi:
-            return [.kiwi: 3]
+            return [.kiwi: FruitInformation(count: 3)]
         case .pineapple:
-            return [.pineapple: 2]
+            return [.pineapple: FruitInformation(count: 2)]
         case .strawberryBanana:
-            return [.strawberry: 10, .banana: 1]
+            return [.strawberry: FruitInformation(count: 10), .banana: FruitInformation(count: 1)]
         case .mango:
-            return [.mango: 3]
+            return [.mango: FruitInformation(count: 3)]
         case .mangokiwi:
-            return [.mango: 2, .kiwi: 1]
+            return [.mango: FruitInformation(count: 2), .kiwi: FruitInformation(count: 1)]
         }
     }
 }
 
 enum JuiceMakerError: Error {
     case outOfStock
+    case invalidFruit
 }
 
-struct FruitStock: CustomStringConvertible {
-    private(set) var remainedFruit: FruitCount
-    var description: String {
-        return "\(remainedFruit)"
-    }
+class FruitStock {
+    private var remainedFruit: FruitCount
     
     init(initialCount: Int) {
-        remainedFruit = [.strawberry: initialCount, .banana: initialCount, .kiwi: initialCount, .pineapple: initialCount, .mango: initialCount]
+        remainedFruit = [.strawberry: FruitInformation(count: initialCount), .banana: FruitInformation(count: initialCount), .kiwi: FruitInformation(count: initialCount), .pineapple: FruitInformation(count: initialCount), .mango: FruitInformation(count: initialCount)]
     }
     
-    mutating func addStock(of fruit: Fruit, count: Int) {
+    func addStock(of fruit: Fruit, count: Int) {
         if let storedFruit = remainedFruit[fruit] {
-            remainedFruit[fruit] = storedFruit + count
+            remainedFruit[fruit]?.count = storedFruit.count + count
         }
     }
     
-    mutating func subtractStock(of fruit: Fruit, count: Int) {
+    func subtractStock(of fruit: Fruit, count: Int) {
         if let storedFruit = remainedFruit[fruit] {
-            remainedFruit[fruit] = storedFruit - count
+            remainedFruit[fruit]?.count = storedFruit.count - count
         }
     }
     
-    func checkCount(of fruit: Fruit) -> Int {
+    func readCount(of fruit: Fruit) -> Int {
         if let storedFruit = remainedFruit[fruit] {
-            return storedFruit
+            return storedFruit.count
         } else {
             return 0
         }
@@ -71,15 +73,20 @@ struct FruitStock: CustomStringConvertible {
 }
 
 class JuiceMaker {
-    var stock: FruitStock = FruitStock(initialCount: 10)
+    private var stock: FruitStock = FruitStock(initialCount: 10)
     
     func makeJuice(using juice: Juice) throws {
-        for (ingredient, amount) in juice.recipe {
-            guard stock.checkCount(of: ingredient) > amount else {
+        for (ingredient, information) in juice.recipe {
+            
+            guard stock.readCount(of: ingredient) > information.count else {
                 throw JuiceMakerError.outOfStock
             }
             
-            stock.subtractStock(of: ingredient, count: amount)
+            stock.subtractStock(of: ingredient, count: information.count)
         }
+    }
+    
+    func readStock(of fruit: Fruit) -> Int {
+        stock.readCount(of: fruit)
     }
 }
