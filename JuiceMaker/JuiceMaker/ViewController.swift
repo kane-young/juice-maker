@@ -42,6 +42,13 @@ class ViewController: UIViewController {
         updateLabelText()
     }
     
+    @IBAction func updateStock(_ sender: Any) {
+        guard let uvc = self.storyboard?.instantiateViewController(identifier: "StockVC") else {
+            return
+        }
+        self.present(uvc, animated: false, completion: nil)
+    }
+    
     private func initializeButtonJuice() {
         orderStrawberryJuiceButton.juice = Juice.strawberry
         orderBananaJuiceButton.juice = .banana

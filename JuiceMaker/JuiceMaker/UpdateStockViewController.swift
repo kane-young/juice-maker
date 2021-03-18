@@ -15,7 +15,11 @@ class UpdateStockViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    
+    @IBAction func backToOrder(_ sender: UIBarButtonItem) {
+        self.presentingViewController?.dismiss(animated: false, completion: nil)
+    }
+    
     /*
     // MARK: - Navigation
 

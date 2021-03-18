@@ -24,14 +24,13 @@ class JuiceAlertController: UIAlertController {
     func alertOfFail() -> UIAlertController {
         let alert = UIAlertController(title: "재료가 모자라요", message: "재고를 수정할까요?", preferredStyle: .alert)
         let ok = UIAlertAction(title: "OK", style: .default, handler: { (_) in
-            let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
-            let mainVC = mainStoryboard.instantiateViewController(identifier: "mainVC")
-            
-            guard let uvc = self.storyboard?.instantiateViewController(identifier: "StockVC") else {
+            guard let rootView = UIApplication.shared.windows.last?.rootViewController else {
                 return
             }
             
-            mainVC.present(uvc, animated: false, completion: nil)
+            let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let uvc = mainStoryboard.instantiateViewController(identifier: "StockVC")
+            rootView.present(uvc, animated: false, completion: nil)
         })
         let cancel = UIAlertAction(title: "Cancel", style: .default, handler: nil)
         alert.addAction(ok)
