@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C32081F2260238CB0076FADF /* UpdateStockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32081F1260238CB0076FADF /* UpdateStockViewController.swift */; };
+		C3F285FC2600FF7F0086BFAD /* OrderJuiceButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F285FB2600FF7F0086BFAD /* OrderJuiceButton.swift */; };
+		C3F285FF260100070086BFAD /* JuiceAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F285FE260100070086BFAD /* JuiceAlertController.swift */; };
 		C73DAF37255D0CDD00020D38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73DAF36255D0CDD00020D38 /* AppDelegate.swift */; };
 		C73DAF39255D0CDD00020D38 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73DAF38255D0CDD00020D38 /* SceneDelegate.swift */; };
 		C73DAF3B255D0CDD00020D38 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73DAF3A255D0CDD00020D38 /* ViewController.swift */; };
@@ -17,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C32081F1260238CB0076FADF /* UpdateStockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateStockViewController.swift; sourceTree = "<group>"; };
+		C3F285FB2600FF7F0086BFAD /* OrderJuiceButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderJuiceButton.swift; sourceTree = "<group>"; };
+		C3F285FE260100070086BFAD /* JuiceAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JuiceAlertController.swift; sourceTree = "<group>"; };
 		C73DAF33255D0CDD00020D38 /* JuiceMaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JuiceMaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C73DAF36255D0CDD00020D38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C73DAF38255D0CDD00020D38 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +69,9 @@
 				C73DAF3A255D0CDD00020D38 /* ViewController.swift */,
 				C73DAF4B255D0D0400020D38 /* JuiceMaker.swift */,
 				C73DAF3C255D0CDD00020D38 /* Main.storyboard */,
+				C32081F1260238CB0076FADF /* UpdateStockViewController.swift */,
+				C3F285FB2600FF7F0086BFAD /* OrderJuiceButton.swift */,
+				C3F285FE260100070086BFAD /* JuiceAlertController.swift */,
 				C73DAF3F255D0CDE00020D38 /* Assets.xcassets */,
 				C73DAF41255D0CDF00020D38 /* LaunchScreen.storyboard */,
 				C73DAF44255D0CDF00020D38 /* Info.plist */,
@@ -142,8 +151,11 @@
 			files = (
 				C73DAF3B255D0CDD00020D38 /* ViewController.swift in Sources */,
 				C73DAF37255D0CDD00020D38 /* AppDelegate.swift in Sources */,
+				C32081F2260238CB0076FADF /* UpdateStockViewController.swift in Sources */,
 				C73DAF39255D0CDD00020D38 /* SceneDelegate.swift in Sources */,
+				C3F285FC2600FF7F0086BFAD /* OrderJuiceButton.swift in Sources */,
 				C73DAF4C255D0D0400020D38 /* JuiceMaker.swift in Sources */,
+				C3F285FF260100070086BFAD /* JuiceAlertController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
