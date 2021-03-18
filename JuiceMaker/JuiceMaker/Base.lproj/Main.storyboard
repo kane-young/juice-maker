@@ -11,7 +11,7 @@
         <!--맛있는 쥬스를 만들어 드려요!-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="JuiceMaker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="mainVC" id="BYZ-38-t0r" customClass="ViewController" customModule="JuiceMaker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -215,7 +215,11 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="맛있는 쥬스를 만들어 드려요!" id="IJH-ev-PNm">
-                        <barButtonItem key="rightBarButtonItem" title="재고 수정" id="bQI-pD-GeL"/>
+                        <barButtonItem key="rightBarButtonItem" title="재고 수정" id="bQI-pD-GeL">
+                            <connections>
+                                <segue destination="Hbo-vF-jcE" kind="show" id="dXx-UF-w4x"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -236,6 +240,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2277.0142180094786" y="-1892.3076923076922"/>
+        </scene>
+        <!--Update Stock View Controller-->
+        <scene sceneID="JCj-bw-VMD">
+            <objects>
+                <viewController storyboardIdentifier="StockVC" id="Hbo-vF-jcE" customClass="UpdateStockViewController" customModule="JuiceMaker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8Az-cI-t0f">
+                        <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="dA1-4H-bEq"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="mod-k9-ycp"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yee-Xz-3ZY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2277" y="-965"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ZOa-Qt-UkG">

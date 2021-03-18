@@ -9,15 +9,15 @@ import UIKit
 import Foundation
 
 class OrderJuiceButton: UIButton {
-    var juice: Juice = .strawberry
+    var juice: Juice?
     
     func make(juice: Juice) -> UIAlertController {
         let alert = JuiceAlertController()
         do{
             try JuiceMaker.shared.makeJuice(using: juice)
-            return alert.presentAlertOfSuccessmakeJuice(using: juice)
+            return alert.alertOfSuccessmakeJuice(using: juice)
         } catch {
-            return alert.presentAlertOfFail()
+            return alert.alertOfFail()
         }
     }
 }

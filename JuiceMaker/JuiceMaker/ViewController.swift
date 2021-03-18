@@ -25,17 +25,19 @@ class ViewController: UIViewController {
     var juiceMaker: JuiceMaker = JuiceMaker.shared
     
     override func viewDidLoad() {
+        initializeButtonJuice()
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
 
     override func viewWillAppear(_ animated: Bool) {
-        initializeButtonJuice()
         updateLabelText()
     }
     
     @IBAction func orderJuice(_ sender: OrderJuiceButton) {
-        let alert = sender.make(juice: sender.juice)
+        guard let juice = sender.juice else {
+            return
+        }
+        let alert = sender.make(juice: juice)
         self.present(alert, animated: false, completion: nil)
         updateLabelText()
     }
