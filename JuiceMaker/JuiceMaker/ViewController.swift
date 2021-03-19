@@ -42,7 +42,7 @@ class ViewController: UIViewController {
         updateLabelText()
     }
     
-    @IBAction func updateStock(_ sender: Any) {
+    @IBAction func moveStock(_ sender: Any) {
         guard let uvc = self.storyboard?.instantiateViewController(identifier: "StockVC") else {
             return
         }
@@ -50,7 +50,7 @@ class ViewController: UIViewController {
     }
     
     private func initializeButtonJuice() {
-        orderStrawberryJuiceButton.juice = Juice.strawberry
+        orderStrawberryJuiceButton.juice = .strawberry
         orderBananaJuiceButton.juice = .banana
         orderPineappleJuiceButton.juice = .pineapple
         orderKiwiJuiceButton.juice = .kiwi
