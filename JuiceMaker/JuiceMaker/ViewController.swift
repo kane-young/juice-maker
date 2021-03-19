@@ -59,7 +59,7 @@ class ViewController: UIViewController {
         orderMangoKiwiJuiceButton.juice = .mangokiwi
     }
     
-    private func updateLabelText() {
+    private func updateLabelText(juice: Juice) {
         strawberryCount.text = String(juiceMaker.readStock(of: .strawberry))
         bananaCount.text = String(juiceMaker.readStock(of: .banana))
         pineappleCount.text = String(juiceMaker.readStock(of: .pineapple))
