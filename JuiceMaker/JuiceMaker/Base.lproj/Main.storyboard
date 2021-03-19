@@ -159,11 +159,7 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="맛있는 쥬스를 만들어 드려요!" id="IJH-ev-PNm">
-                        <barButtonItem key="rightBarButtonItem" title="재고 수정" id="bQI-pD-GeL">
-                            <connections>
-                                <action selector="changeView:" destination="BYZ-38-t0r" id="V9V-Mz-ikV"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="재고 수정" id="bQI-pD-GeL"/>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -184,7 +180,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1900" y="-2115"/>
+            <point key="canvasLocation" x="-2450" y="-2118"/>
         </scene>
         <!--Update View Controller-->
         <scene sceneID="Fdh-av-MIb">
@@ -217,7 +213,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bpj-0T-ylM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2450" y="-1494"/>
+            <point key="canvasLocation" x="-2450" y="-1308"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ZOa-Qt-UkG">
