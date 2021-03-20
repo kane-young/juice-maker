@@ -27,6 +27,14 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         initializeButtonJuice()
         super.viewDidLoad()
+        
+        
+    }
+    
+    @objc func didRecive(_ noti: Notification) {
+        guard let fruits: FruitCount = noti.userInfo?["fruit"] as? FruitCount else { return }
+        
+        
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -59,7 +67,7 @@ class ViewController: UIViewController {
         orderMangoKiwiJuiceButton.juice = .mangokiwi
     }
     
-    private func updateLabelText(juice: Juice) {
+    private func updateLabelText() {
         strawberryCount.text = String(juiceMaker.readStock(of: .strawberry))
         bananaCount.text = String(juiceMaker.readStock(of: .banana))
         pineappleCount.text = String(juiceMaker.readStock(of: .pineapple))
@@ -68,3 +76,7 @@ class ViewController: UIViewController {
     }
 }
 
+
+extension Notification.Name {
+    static let stock = Notification.Name("changeStock")
+}

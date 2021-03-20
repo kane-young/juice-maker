@@ -16,6 +16,7 @@ class OrderJuiceButton: UIButton {
         do{
             try JuiceMaker.shared.makeJuice(using: juice)
             return alert.alertOfSuccessmakeJuice(using: juice)
+            NotificationCenter.default.post(name: Notification.Name.stock, object: nil, userInfo: ["fruit":juice.recipe])
         } catch {
             return alert.alertOfFail()
         }
