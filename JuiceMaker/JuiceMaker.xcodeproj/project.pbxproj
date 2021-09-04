@@ -45,6 +45,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C3A414D026E359D4005CB7AE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				526A13C92604857400EABE5B /* orderAlertController.swift */,
+				C386F776260491F200D7038F /* StockViewController.swift */,
+				C73DAF3A255D0CDD00020D38 /* ViewController.swift */,
+				C386F7702604809100D7038F /* OrderJuiceButton.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C3A414D126E359F1005CB7AE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C73DAF4B255D0D0400020D38 /* JuiceMaker.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C3A414D226E359FA005CB7AE /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				C73DAF3C255D0CDD00020D38 /* Main.storyboard */,
+				C73DAF41255D0CDF00020D38 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
 		C73DAF2A255D0CDC00020D38 = {
 			isa = PBXGroup;
 			children = (
@@ -66,14 +94,10 @@
 			children = (
 				C73DAF36255D0CDD00020D38 /* AppDelegate.swift */,
 				C73DAF38255D0CDD00020D38 /* SceneDelegate.swift */,
-				C73DAF3A255D0CDD00020D38 /* ViewController.swift */,
-				C386F7702604809100D7038F /* OrderJuiceButton.swift */,
-				C73DAF4B255D0D0400020D38 /* JuiceMaker.swift */,
-				526A13C92604857400EABE5B /* orderAlertController.swift */,
-				C386F776260491F200D7038F /* StockViewController.swift */,
-				C73DAF3C255D0CDD00020D38 /* Main.storyboard */,
+				C3A414D026E359D4005CB7AE /* View */,
+				C3A414D126E359F1005CB7AE /* Model */,
+				C3A414D226E359FA005CB7AE /* Storyboard */,
 				C73DAF3F255D0CDE00020D38 /* Assets.xcassets */,
-				C73DAF41255D0CDF00020D38 /* LaunchScreen.storyboard */,
 				C73DAF44255D0CDF00020D38 /* Info.plist */,
 			);
 			path = JuiceMaker;
