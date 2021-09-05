@@ -72,7 +72,7 @@ final class CounterViewController: UIViewController {
         case .banana:
             bananaCountLabel.text = String(juiceMaker.readStock(of: .banana))
         case .pineapple:
-            pineappleCountLabel.text = String(juiceMaker.readStock(of: .banana))
+            pineappleCountLabel.text = String(juiceMaker.readStock(of: .pineapple))
         case .kiwi:
             kiwiCountLabel.text = String(juiceMaker.readStock(of: .kiwi))
         case .mango:

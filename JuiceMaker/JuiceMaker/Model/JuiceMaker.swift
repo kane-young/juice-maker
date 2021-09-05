@@ -13,10 +13,13 @@ class JuiceMaker {
     private init() { }
     
     func makeJuice(using juice: Juice) throws {
+        let isSatisfied = juice.recipe.allSatisfy { (ingredient: Fruit, information: FruitInformation) in
+            return stock.readCount(of: ingredient) >= information.count
+        }
+        if isSatisfied == false {
+            throw JuiceMakerError.outOfStock
+        }
         for (ingredient, information) in juice.recipe {
-            guard stock.readCount(of: ingredient) >=  information.count else {
-                throw JuiceMakerError.outOfStock
-            }
             stock.subtractStock(of: ingredient, count: information.count)
         }
     }
