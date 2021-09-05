@@ -9,7 +9,7 @@ import Foundation
 
 struct FruitStock {
     private var remainedFruit: FruitCount
-    
+
     init(initialCount: UInt) {
         remainedFruit = [.strawberry: FruitInformation(count: initialCount),
                          .banana: FruitInformation(count: initialCount),
@@ -17,19 +17,23 @@ struct FruitStock {
                          .pineapple: FruitInformation(count: initialCount),
                          .mango: FruitInformation(count: initialCount)]
     }
-    
+
     mutating func addStock(of fruit: Fruit, count: UInt) {
         if let storedFruit = remainedFruit[fruit] {
             remainedFruit[fruit]?.count = storedFruit.count + count
         }
     }
-    
+
     mutating func subtractStock(of fruit: Fruit, count: UInt) {
         if let storedFruit = remainedFruit[fruit] {
             remainedFruit[fruit]?.count = storedFruit.count - count
         }
     }
     
+    mutating func updateStock(of fruit: Fruit, count: UInt) {
+        remainedFruit[fruit]?.count = count
+    }
+
     func readCount(of fruit: Fruit) -> UInt {
         if let storedFruit = remainedFruit[fruit] {
             return storedFruit.count

@@ -17,12 +17,15 @@ class JuiceMaker {
             guard stock.readCount(of: ingredient) >=  information.count else {
                 throw JuiceMakerError.outOfStock
             }
-            
             stock.subtractStock(of: ingredient, count: information.count)
         }
     }
     
     func readStock(of fruit: Fruit) -> UInt {
         return stock.readCount(of: fruit)
+    }
+
+    func updateStock(fruit: Fruit, count: UInt) {
+        stock.updateStock(of: fruit, count: count)
     }
 }
