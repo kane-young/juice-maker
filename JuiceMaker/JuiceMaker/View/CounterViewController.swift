@@ -26,6 +26,7 @@ final class CounterViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureButtons()
+        configureButtonsAccessibility()
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -55,6 +56,16 @@ final class CounterViewController: UIViewController {
     }
 
     //MARK:-- initialize function
+    private func configureButtonsAccessibility() {
+        orderStrawberryJuiceButton.titleLabel?.adjustsFontForContentSizeCategory = true
+        orderStrawberryBananaJuiceButton.titleLabel?.adjustsFontForContentSizeCategory = true
+        orderBananaJuiceButton.titleLabel?.adjustsFontForContentSizeCategory = true
+        orderPineappleJuiceButton.titleLabel?.adjustsFontForContentSizeCategory = true
+        orderKiwiJuiceButton.titleLabel?.adjustsFontForContentSizeCategory = true
+        orderMangoJuiceButton.titleLabel?.adjustsFontForContentSizeCategory = true
+        orderMangoKiwiJuiceButton.titleLabel?.adjustsFontForContentSizeCategory = true
+    }
+    
     private func configureButtons() {
         orderStrawberryJuiceButton.juice = .strawberry
         orderBananaJuiceButton.juice = .banana
@@ -63,6 +74,13 @@ final class CounterViewController: UIViewController {
         orderMangoJuiceButton.juice = .mango
         orderMangoKiwiJuiceButton.juice = .mangokiwi
         orderPineappleJuiceButton.juice = .pineapple
+        orderStrawberryJuiceButton.titleLabel?.adjustsFontSizeToFitWidth = true
+        orderBananaJuiceButton.titleLabel?.adjustsFontSizeToFitWidth = true
+        orderStrawberryBananaJuiceButton.titleLabel?.adjustsFontSizeToFitWidth = true
+        orderKiwiJuiceButton.titleLabel?.adjustsFontSizeToFitWidth = true
+        orderMangoJuiceButton.titleLabel?.adjustsFontSizeToFitWidth = true
+        orderMangoKiwiJuiceButton.titleLabel?.adjustsFontSizeToFitWidth = true
+        orderPineappleJuiceButton.titleLabel?.adjustsFontSizeToFitWidth = true
     }
     
     private func updateFruitCountLabel(_ fruit: Fruit) {

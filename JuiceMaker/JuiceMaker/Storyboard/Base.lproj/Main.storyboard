@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8xy-oJ-TA3">
-    <device id="retina6_1" orientation="landscape" appearance="light"/>
+    <device id="retina6_5" orientation="landscape" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -16,93 +16,93 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="XNe-fB-6Nx">
-                                <rect key="frame" x="54" y="54" width="788" height="181.5"/>
+                                <rect key="frame" x="54" y="53.999999999999986" width="788" height="174.66666666666663"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="fCg-OH-LBK">
-                                        <rect key="frame" x="0.0" y="0.0" width="141.5" height="181.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="141.66666666666666" height="174.66666666666666"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="딸기" translatesAutoresizingMaskIntoConstraints="NO" id="Gkd-xq-wUY">
-                                                <rect key="frame" x="0.0" y="0.0" width="141.5" height="141.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="141.66666666666666" height="141.66666666666666"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="Gkd-xq-wUY" secondAttribute="height" multiplier="1:1" id="V4i-3e-N8v"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ddR-gt-XFN">
-                                                <rect key="frame" x="0.0" y="151.5" width="141.5" height="30"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ddR-gt-XFN">
+                                                <rect key="frame" x="0.0" y="151.66666666666666" width="141.66666666666666" height="23"/>
                                                 <color key="backgroundColor" red="0.57721884762265518" green="0.69673013687133789" blue="0.37499805911940604" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="3NV-Jp-rvq">
-                                        <rect key="frame" x="161.5" y="0.0" width="141.5" height="181.5"/>
+                                        <rect key="frame" x="161.66666666666669" y="0.0" width="141.66666666666669" height="174.66666666666666"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="바나나" translatesAutoresizingMaskIntoConstraints="NO" id="Inl-jm-fVg">
-                                                <rect key="frame" x="0.0" y="0.0" width="141.5" height="141.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="141.66666666666666" height="141.66666666666666"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="Inl-jm-fVg" secondAttribute="height" multiplier="1:1" id="mWK-zg-G0t"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gbz-dc-Ktc">
-                                                <rect key="frame" x="0.0" y="151.5" width="141.5" height="30"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gbz-dc-Ktc">
+                                                <rect key="frame" x="0.0" y="151.66666666666666" width="141.66666666666666" height="23"/>
                                                 <color key="backgroundColor" red="0.57721884762265518" green="0.69673013687133789" blue="0.37499805911940604" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="LjK-OZ-zVs">
-                                        <rect key="frame" x="323" y="0.0" width="142" height="181.5"/>
+                                        <rect key="frame" x="323.33333333333331" y="0.0" width="141.33333333333331" height="174.66666666666666"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="파인애플" translatesAutoresizingMaskIntoConstraints="NO" id="P0J-Jv-GGJ">
-                                                <rect key="frame" x="0.0" y="0.0" width="142" height="141.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="141.33333333333334" height="141.66666666666666"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="P0J-Jv-GGJ" secondAttribute="height" multiplier="1:1" id="VRC-sw-cne"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Um5-92-aTG">
-                                                <rect key="frame" x="0.0" y="151.5" width="142" height="30"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Um5-92-aTG">
+                                                <rect key="frame" x="0.0" y="151.66666666666666" width="141.33333333333334" height="23"/>
                                                 <color key="backgroundColor" red="0.57721884762265518" green="0.69673013687133789" blue="0.37499805911940604" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="SVa-W8-xYZ">
-                                        <rect key="frame" x="485" y="0.0" width="141.5" height="181.5"/>
+                                        <rect key="frame" x="484.66666666666669" y="0.0" width="141.66666666666669" height="174.66666666666666"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="키위" translatesAutoresizingMaskIntoConstraints="NO" id="4aU-yC-Mwl">
-                                                <rect key="frame" x="0.0" y="0.0" width="141.5" height="141.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="141.66666666666666" height="141.66666666666666"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="4aU-yC-Mwl" secondAttribute="height" multiplier="1:1" id="bCK-ee-S2y"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ghS-vv-UcU">
-                                                <rect key="frame" x="0.0" y="151.5" width="141.5" height="30"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ghS-vv-UcU">
+                                                <rect key="frame" x="0.0" y="151.66666666666666" width="141.66666666666666" height="23"/>
                                                 <color key="backgroundColor" red="0.57721884762265518" green="0.69673013687133789" blue="0.37499805911940604" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="hRe-UN-omS">
-                                        <rect key="frame" x="646.5" y="0.0" width="141.5" height="181.5"/>
+                                        <rect key="frame" x="646.33333333333337" y="0.0" width="141.66666666666663" height="174.66666666666666"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="망고" translatesAutoresizingMaskIntoConstraints="NO" id="vnx-eO-HHB">
-                                                <rect key="frame" x="0.0" y="0.0" width="141.5" height="141.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="141.66666666666666" height="141.66666666666666"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="vnx-eO-HHB" secondAttribute="height" multiplier="1:1" id="Dtr-ey-pKg"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cTj-sr-IKQ">
-                                                <rect key="frame" x="0.0" y="151.5" width="141.5" height="30"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cTj-sr-IKQ">
+                                                <rect key="frame" x="0.0" y="151.66666666666666" width="141.66666666666666" height="23"/>
                                                 <color key="backgroundColor" red="0.57721884762265518" green="0.69673013687133789" blue="0.37499805911940604" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -111,11 +111,12 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="IzA-Qg-o5H">
-                                <rect key="frame" x="54" y="324.5" width="788" height="48.5"/>
+                                <rect key="frame" x="54" y="320.66666666666669" width="788" height="52.333333333333314"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EfI-J9-A7P" customClass="OrderJuiceButton" customModule="JuiceMaker" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="141.5" height="48.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="141.66666666666666" height="52.333333333333336"/>
                                         <color key="backgroundColor" red="0.96720725299999999" green="0.4592632847" blue="0.31981973959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                         <state key="normal" title="딸기쥬스 주문">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -124,8 +125,9 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tDn-jm-d15" customClass="OrderJuiceButton" customModule="JuiceMaker" customModuleProvider="target">
-                                        <rect key="frame" x="161.5" y="0.0" width="141.5" height="48.5"/>
+                                        <rect key="frame" x="161.66666666666669" y="0.0" width="141.66666666666669" height="52.333333333333336"/>
                                         <color key="backgroundColor" red="0.96720725299999999" green="0.4592632847" blue="0.31981973959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                         <state key="normal" title="바나나쥬스 주문">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -134,8 +136,9 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QRD-7t-hig" customClass="OrderJuiceButton" customModule="JuiceMaker" customModuleProvider="target">
-                                        <rect key="frame" x="323" y="0.0" width="142" height="48.5"/>
+                                        <rect key="frame" x="323.33333333333331" y="0.0" width="141.33333333333331" height="52.333333333333336"/>
                                         <color key="backgroundColor" red="0.96720725299999999" green="0.4592632847" blue="0.31981973959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                         <state key="normal" title="파인애플쥬스 주문">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -144,8 +147,9 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YeE-1N-GYM" customClass="OrderJuiceButton" customModule="JuiceMaker" customModuleProvider="target">
-                                        <rect key="frame" x="485" y="0.0" width="141.5" height="48.5"/>
+                                        <rect key="frame" x="484.66666666666669" y="0.0" width="141.66666666666669" height="52.333333333333336"/>
                                         <color key="backgroundColor" red="0.96720725299999999" green="0.4592632847" blue="0.31981973959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                         <state key="normal" title="키위쥬스 주문">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -154,8 +158,9 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Caa-6l-FHa" customClass="OrderJuiceButton" customModule="JuiceMaker" customModuleProvider="target">
-                                        <rect key="frame" x="646.5" y="0.0" width="141.5" height="48.5"/>
+                                        <rect key="frame" x="646.33333333333337" y="0.0" width="141.66666666666663" height="52.333333333333336"/>
                                         <color key="backgroundColor" red="0.96720725299999999" green="0.4592632847" blue="0.31981973959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                         <state key="normal" title="망고쥬스 주문">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -166,8 +171,9 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SuB-NN-K59" customClass="OrderJuiceButton" customModule="JuiceMaker" customModuleProvider="target">
-                                <rect key="frame" x="54" y="255.5" width="303" height="49"/>
+                                <rect key="frame" x="54" y="248.66666666666663" width="303.33333333333331" height="52"/>
                                 <color key="backgroundColor" red="0.96720725299999999" green="0.4592632847" blue="0.31981973959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                 <state key="normal" title="딸바 쥬스 주문">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -176,8 +182,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aax-zC-FqZ" customClass="OrderJuiceButton" customModule="JuiceMaker" customModuleProvider="target">
-                                <rect key="frame" x="539" y="255.5" width="303" height="49"/>
+                                <rect key="frame" x="538.66666666666663" y="248.66666666666663" width="303.33333333333337" height="52"/>
                                 <color key="backgroundColor" red="0.96720725299999999" green="0.4592632847" blue="0.31981973959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                 <state key="normal" title="망키쥬스 주문">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -242,93 +249,93 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ETp-ID-7Q1">
-                                <rect key="frame" x="54" y="10" width="788" height="181.5"/>
+                                <rect key="frame" x="54" y="10" width="788" height="174.66666666666666"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="gTg-HZ-IUM">
-                                        <rect key="frame" x="0.0" y="0.0" width="141.5" height="181.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="141.66666666666666" height="174.66666666666666"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="딸기" translatesAutoresizingMaskIntoConstraints="NO" id="DOZ-Ns-6M0">
-                                                <rect key="frame" x="0.0" y="0.0" width="141.5" height="141.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="141.66666666666666" height="141.66666666666666"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="DOZ-Ns-6M0" secondAttribute="height" multiplier="1:1" id="Y9y-fS-RBg"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DSz-PH-yzH">
-                                                <rect key="frame" x="0.0" y="151.5" width="141.5" height="30"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DSz-PH-yzH">
+                                                <rect key="frame" x="0.0" y="151.66666666666666" width="141.66666666666666" height="23"/>
                                                 <color key="backgroundColor" red="0.57721884759999997" green="0.69673013689999996" blue="0.3749980591" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="sq1-z7-8pH">
-                                        <rect key="frame" x="161.5" y="0.0" width="141.5" height="181.5"/>
+                                        <rect key="frame" x="161.66666666666669" y="0.0" width="141.66666666666669" height="174.66666666666666"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="바나나" translatesAutoresizingMaskIntoConstraints="NO" id="FtO-3E-ixg">
-                                                <rect key="frame" x="0.0" y="0.0" width="141.5" height="141.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="141.66666666666666" height="141.66666666666666"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="FtO-3E-ixg" secondAttribute="height" multiplier="1:1" id="CwN-SZ-hln"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jCO-cs-ogJ">
-                                                <rect key="frame" x="0.0" y="151.5" width="141.5" height="30"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jCO-cs-ogJ">
+                                                <rect key="frame" x="0.0" y="151.66666666666666" width="141.66666666666666" height="23"/>
                                                 <color key="backgroundColor" red="0.57721884759999997" green="0.69673013689999996" blue="0.3749980591" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="zYl-FG-KSh">
-                                        <rect key="frame" x="323" y="0.0" width="142" height="181.5"/>
+                                        <rect key="frame" x="323.33333333333331" y="0.0" width="141.33333333333331" height="174.66666666666666"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="파인애플" translatesAutoresizingMaskIntoConstraints="NO" id="iCs-pT-ONk">
-                                                <rect key="frame" x="0.0" y="0.0" width="142" height="141.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="141.33333333333334" height="141.66666666666666"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="iCs-pT-ONk" secondAttribute="height" multiplier="1:1" id="fyR-1T-Nbs"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nKK-8V-TB5">
-                                                <rect key="frame" x="0.0" y="151.5" width="142" height="30"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nKK-8V-TB5">
+                                                <rect key="frame" x="0.0" y="151.66666666666666" width="141.33333333333334" height="23"/>
                                                 <color key="backgroundColor" red="0.57721884759999997" green="0.69673013689999996" blue="0.3749980591" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="JAR-6P-J72">
-                                        <rect key="frame" x="485" y="0.0" width="141.5" height="181.5"/>
+                                        <rect key="frame" x="484.66666666666669" y="0.0" width="141.66666666666669" height="174.66666666666666"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="키위" translatesAutoresizingMaskIntoConstraints="NO" id="GQb-A6-mC6">
-                                                <rect key="frame" x="0.0" y="0.0" width="141.5" height="141.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="141.66666666666666" height="141.66666666666666"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="GQb-A6-mC6" secondAttribute="height" multiplier="1:1" id="dkS-KE-Jjm"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="49R-h3-rVd">
-                                                <rect key="frame" x="0.0" y="151.5" width="141.5" height="30"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="49R-h3-rVd">
+                                                <rect key="frame" x="0.0" y="151.66666666666666" width="141.66666666666666" height="23"/>
                                                 <color key="backgroundColor" red="0.57721884759999997" green="0.69673013689999996" blue="0.3749980591" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="lLB-fu-KzM">
-                                        <rect key="frame" x="646.5" y="0.0" width="141.5" height="181.5"/>
+                                        <rect key="frame" x="646.33333333333337" y="0.0" width="141.66666666666663" height="174.66666666666666"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="망고" translatesAutoresizingMaskIntoConstraints="NO" id="Uwu-en-3Ze">
-                                                <rect key="frame" x="0.0" y="0.0" width="141.5" height="141.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="141.66666666666666" height="141.66666666666666"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="Uwu-en-3Ze" secondAttribute="height" multiplier="1:1" id="yi6-EX-Q9q"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tII-2t-p1a">
-                                                <rect key="frame" x="0.0" y="151.5" width="141.5" height="30"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tII-2t-p1a">
+                                                <rect key="frame" x="0.0" y="151.66666666666666" width="141.66666666666666" height="23"/>
                                                 <color key="backgroundColor" red="0.57721884759999997" green="0.69673013689999996" blue="0.3749980591" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -337,31 +344,31 @@
                                 </subviews>
                             </stackView>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="WH3-vS-Sjd" customClass="StockStepper" customModule="JuiceMaker" customModuleProvider="target">
-                                <rect key="frame" x="78" y="221.5" width="94" height="32"/>
+                                <rect key="frame" x="77.666666666666671" y="214.66666666666666" width="94.000000000000014" height="32"/>
                                 <connections>
                                     <action selector="touchStepper:" destination="OM7-Cs-7Nc" eventType="valueChanged" id="DwI-gg-0KW"/>
                                 </connections>
                             </stepper>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="BBp-Oc-KsE" customClass="StockStepper" customModule="JuiceMaker" customModuleProvider="target">
-                                <rect key="frame" x="239.5" y="221.5" width="94" height="32"/>
+                                <rect key="frame" x="239.33333333333337" y="214.66666666666666" width="94" height="32"/>
                                 <connections>
                                     <action selector="touchStepper:" destination="OM7-Cs-7Nc" eventType="valueChanged" id="BOd-lc-5an"/>
                                 </connections>
                             </stepper>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="IFe-JF-UHe" customClass="StockStepper" customModule="JuiceMaker" customModuleProvider="target">
-                                <rect key="frame" x="562.5" y="221.5" width="94" height="32"/>
+                                <rect key="frame" x="562.66666666666663" y="214.66666666666666" width="94" height="32"/>
                                 <connections>
                                     <action selector="touchStepper:" destination="OM7-Cs-7Nc" eventType="valueChanged" id="qHU-Fa-tzh"/>
                                 </connections>
                             </stepper>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="9Bf-7f-aP4" customClass="StockStepper" customModule="JuiceMaker" customModuleProvider="target">
-                                <rect key="frame" x="724" y="221.5" width="94" height="32"/>
+                                <rect key="frame" x="724.33333333333337" y="214.66666666666666" width="94" height="32"/>
                                 <connections>
                                     <action selector="touchStepper:" destination="OM7-Cs-7Nc" eventType="valueChanged" id="RnI-nG-qrq"/>
                                 </connections>
                             </stepper>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="ziU-bo-6JF" customClass="StockStepper" customModule="JuiceMaker" customModuleProvider="target">
-                                <rect key="frame" x="401" y="221.5" width="94" height="32"/>
+                                <rect key="frame" x="401" y="214.66666666666666" width="94" height="32"/>
                                 <connections>
                                     <action selector="touchStepper:" destination="OM7-Cs-7Nc" eventType="valueChanged" id="AjR-9r-b8o"/>
                                 </connections>
