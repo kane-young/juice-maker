@@ -241,20 +241,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PxZ-8f-UoI">
-                                <rect key="frame" x="0.0" y="0.0" width="896" height="44"/>
-                                <items>
-                                    <navigationItem title="재고 추가" id="Yw6-li-niI">
-                                        <barButtonItem key="rightBarButtonItem" title="닫기" id="6qo-p5-Jqe">
-                                            <connections>
-                                                <action selector="touchUpClosedButton:" destination="OM7-Cs-7Nc" id="I2D-h0-sa8"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ETp-ID-7Q1">
-                                <rect key="frame" x="54" y="54" width="788" height="181.5"/>
+                                <rect key="frame" x="54" y="10" width="788" height="181.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="gTg-HZ-IUM">
                                         <rect key="frame" x="0.0" y="0.0" width="141.5" height="181.5"/>
@@ -348,20 +336,35 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="WH3-vS-Sjd">
-                                <rect key="frame" x="78" y="265.5" width="94" height="32"/>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="WH3-vS-Sjd" customClass="StockStepper" customModule="JuiceMaker" customModuleProvider="target">
+                                <rect key="frame" x="78" y="221.5" width="94" height="32"/>
+                                <connections>
+                                    <action selector="touchStepper:" destination="OM7-Cs-7Nc" eventType="valueChanged" id="DwI-gg-0KW"/>
+                                </connections>
                             </stepper>
-                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="BBp-Oc-KsE">
-                                <rect key="frame" x="239.5" y="265.5" width="94" height="32"/>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="BBp-Oc-KsE" customClass="StockStepper" customModule="JuiceMaker" customModuleProvider="target">
+                                <rect key="frame" x="239.5" y="221.5" width="94" height="32"/>
+                                <connections>
+                                    <action selector="touchStepper:" destination="OM7-Cs-7Nc" eventType="valueChanged" id="BOd-lc-5an"/>
+                                </connections>
                             </stepper>
-                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="IFe-JF-UHe">
-                                <rect key="frame" x="562.5" y="265.5" width="94" height="32"/>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="IFe-JF-UHe" customClass="StockStepper" customModule="JuiceMaker" customModuleProvider="target">
+                                <rect key="frame" x="562.5" y="221.5" width="94" height="32"/>
+                                <connections>
+                                    <action selector="touchStepper:" destination="OM7-Cs-7Nc" eventType="valueChanged" id="qHU-Fa-tzh"/>
+                                </connections>
                             </stepper>
-                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="9Bf-7f-aP4">
-                                <rect key="frame" x="724" y="265.5" width="94" height="32"/>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="9Bf-7f-aP4" customClass="StockStepper" customModule="JuiceMaker" customModuleProvider="target">
+                                <rect key="frame" x="724" y="221.5" width="94" height="32"/>
+                                <connections>
+                                    <action selector="touchStepper:" destination="OM7-Cs-7Nc" eventType="valueChanged" id="RnI-nG-qrq"/>
+                                </connections>
                             </stepper>
-                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="ziU-bo-6JF">
-                                <rect key="frame" x="401" y="265.5" width="94" height="32"/>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="ziU-bo-6JF" customClass="StockStepper" customModule="JuiceMaker" customModuleProvider="target">
+                                <rect key="frame" x="401" y="221.5" width="94" height="32"/>
+                                <connections>
+                                    <action selector="touchStepper:" destination="OM7-Cs-7Nc" eventType="valueChanged" id="AjR-9r-b8o"/>
+                                </connections>
                             </stepper>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="3d2-1g-ToK"/>
@@ -370,17 +373,14 @@
                             <constraint firstItem="BBp-Oc-KsE" firstAttribute="top" secondItem="ETp-ID-7Q1" secondAttribute="bottom" constant="30" id="8t4-Xp-Rvb"/>
                             <constraint firstItem="WH3-vS-Sjd" firstAttribute="centerX" secondItem="DSz-PH-yzH" secondAttribute="centerX" id="CEz-Ce-eFL"/>
                             <constraint firstItem="IFe-JF-UHe" firstAttribute="centerX" secondItem="49R-h3-rVd" secondAttribute="centerX" id="GOb-vp-wQJ"/>
-                            <constraint firstItem="PxZ-8f-UoI" firstAttribute="leading" secondItem="kEl-Sf-frr" secondAttribute="leading" id="Izf-O5-1tv"/>
                             <constraint firstItem="BBp-Oc-KsE" firstAttribute="centerX" secondItem="jCO-cs-ogJ" secondAttribute="centerX" id="KEf-zf-Dur"/>
                             <constraint firstItem="WH3-vS-Sjd" firstAttribute="top" secondItem="ETp-ID-7Q1" secondAttribute="bottom" constant="30" id="LQr-Xq-SVQ"/>
                             <constraint firstItem="ziU-bo-6JF" firstAttribute="top" secondItem="ETp-ID-7Q1" secondAttribute="bottom" constant="30" id="MFh-hR-4oB"/>
                             <constraint firstItem="IFe-JF-UHe" firstAttribute="top" secondItem="ETp-ID-7Q1" secondAttribute="bottom" constant="30" id="UVJ-KZ-BW8"/>
-                            <constraint firstAttribute="trailing" secondItem="PxZ-8f-UoI" secondAttribute="trailing" id="acg-Fm-fLo"/>
-                            <constraint firstItem="PxZ-8f-UoI" firstAttribute="top" secondItem="3d2-1g-ToK" secondAttribute="top" id="f1M-YW-9AI"/>
+                            <constraint firstItem="ETp-ID-7Q1" firstAttribute="top" secondItem="3d2-1g-ToK" secondAttribute="top" constant="10" id="aNy-2I-oD3"/>
                             <constraint firstItem="9Bf-7f-aP4" firstAttribute="top" secondItem="ETp-ID-7Q1" secondAttribute="bottom" constant="30" id="law-O0-CII"/>
                             <constraint firstItem="9Bf-7f-aP4" firstAttribute="centerX" secondItem="tII-2t-p1a" secondAttribute="centerX" id="ni7-0I-wVV"/>
                             <constraint firstItem="ziU-bo-6JF" firstAttribute="centerX" secondItem="nKK-8V-TB5" secondAttribute="centerX" id="nro-Dr-a8e"/>
-                            <constraint firstItem="ETp-ID-7Q1" firstAttribute="top" secondItem="PxZ-8f-UoI" secondAttribute="bottom" constant="10" id="tAu-4a-LVa"/>
                             <constraint firstItem="ETp-ID-7Q1" firstAttribute="leading" secondItem="3d2-1g-ToK" secondAttribute="leading" constant="10" id="xlH-wr-PO5"/>
                             <constraint firstItem="3d2-1g-ToK" firstAttribute="trailing" secondItem="ETp-ID-7Q1" secondAttribute="trailing" constant="10" id="zSJ-IF-XoB"/>
                         </constraints>

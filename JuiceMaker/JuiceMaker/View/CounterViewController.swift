@@ -6,14 +6,13 @@
 
 import UIKit
 
-class CounterViewController: UIViewController {
+final class CounterViewController: UIViewController {
     //MARK:-- @IBOutlet Properties
     @IBOutlet private weak var strawberryCountLabel: UILabel!
     @IBOutlet private weak var bananaCountLabel: UILabel!
     @IBOutlet private weak var pineappleCountLabel: UILabel!
     @IBOutlet private weak var kiwiCountLabel: UILabel!
     @IBOutlet private weak var mangoCountLabel: UILabel!
-
     @IBOutlet private weak var orderStrawberryBananaJuiceButton: OrderJuiceButton!
     @IBOutlet private weak var orderStrawberryJuiceButton: OrderJuiceButton!
     @IBOutlet private weak var orderBananaJuiceButton: OrderJuiceButton!
@@ -21,11 +20,12 @@ class CounterViewController: UIViewController {
     @IBOutlet private weak var orderMangoKiwiJuiceButton: OrderJuiceButton!
     @IBOutlet private weak var orderKiwiJuiceButton: OrderJuiceButton!
     @IBOutlet private weak var orderMangoJuiceButton: OrderJuiceButton!
+    private let juiceMaker: JuiceMaker = JuiceMaker.shared
 
     //MARK:-- Life Cycle function
     override func viewDidLoad() {
         super.viewDidLoad()
-        initializeButtons()
+        configureButtons()
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -38,20 +38,24 @@ class CounterViewController: UIViewController {
         guard let stockVC = self.storyboard?.instantiateViewController(identifier: "stockVC") else {
             return
         }
-        self.present(stockVC, animated: false, completion: nil)
+      self.navigationController?.pushViewController(stockVC, animated: true)
     }
 
     @IBAction private func orderJuice(_ sender: OrderJuiceButton) {
-        guard let juice = sender.juice else {
-            return
+        guard let juice = sender.juice else { return }
+        do {
+            try juiceMaker.makeJuice(using: juice)
+            alertOfSuccess(juice: juice)
+        } catch {
+            alertOfFail()
         }
-        let alert = sender.make(using: juice)
-        self.present(alert, animated: true, completion: nil)
-        updateFruitCount()
+        for (fruit, _) in juice.recipe {
+            updateFruitCountLabel(fruit)
+        }
     }
 
-    //MARK:-- function
-    private func initializeButtons() {
+    //MARK:-- initialize function
+    private func configureButtons() {
         orderStrawberryJuiceButton.juice = .strawberry
         orderBananaJuiceButton.juice = .banana
         orderStrawberryBananaJuiceButton.juice = .strawberryBanana
@@ -60,14 +64,27 @@ class CounterViewController: UIViewController {
         orderMangoKiwiJuiceButton.juice = .mangokiwi
         orderPineappleJuiceButton.juice = .pineapple
     }
+    
+    private func updateFruitCountLabel(_ fruit: Fruit) {
+        switch fruit {
+        case .strawberry:
+            strawberryCountLabel.text = String(juiceMaker.readStock(of: .strawberry))
+        case .banana:
+            bananaCountLabel.text = String(juiceMaker.readStock(of: .banana))
+        case .pineapple:
+            pineappleCountLabel.text = String(juiceMaker.readStock(of: .banana))
+        case .kiwi:
+            kiwiCountLabel.text = String(juiceMaker.readStock(of: .kiwi))
+        case .mango:
+            mangoCountLabel.text = String(juiceMaker.readStock(of: .mango))
+        }
+    }
 
     private func updateFruitCount() {
-        strawberryCountLabel.text = String(JuiceMaker.shared.readStock(of: .strawberry))
-        bananaCountLabel.text = String(JuiceMaker.shared
-                                    .readStock(of: .banana))
-        kiwiCountLabel.text = String(JuiceMaker.shared.readStock(of: .kiwi))
-        pineappleCountLabel.text = String(JuiceMaker.shared.readStock(of: .pineapple))
-        mangoCountLabel.text = String(JuiceMaker.shared.readStock(of: .mango))
+        strawberryCountLabel.text = String(juiceMaker.readStock(of: .strawberry))
+        bananaCountLabel.text = String(juiceMaker.readStock(of: .banana))
+        kiwiCountLabel.text = String(juiceMaker.readStock(of: .kiwi))
+        pineappleCountLabel.text = String(juiceMaker.readStock(of: .pineapple))
+        mangoCountLabel.text = String(juiceMaker.readStock(of: .mango))
     }
 }
-
