@@ -14,11 +14,11 @@ final class StockViewController: UIViewController {
     @IBOutlet private weak var pineappleCountLabel: UILabel!
     @IBOutlet private weak var kiwiCountLabel: UILabel!
     @IBOutlet private weak var mangoCountLabel: UILabel!
-    @IBOutlet private weak var strawberryStepper: StockStepper!
-    @IBOutlet private weak var bananaStepper: StockStepper!
-    @IBOutlet private weak var pineappleStepper: StockStepper!
-    @IBOutlet private weak var kiwiStepper: StockStepper!
-    @IBOutlet private weak var mangoStepper: StockStepper!
+    @IBOutlet private weak var strawberryStepper: UIStepper!
+    @IBOutlet private weak var bananaStepper: UIStepper!
+    @IBOutlet private weak var pineappleStepper: UIStepper!
+    @IBOutlet private weak var kiwiStepper: UIStepper!
+    @IBOutlet private weak var mangoStepper: UIStepper!
     private let juiceMaker: JuiceMaker = JuiceMaker.shared
     
     //MARK:-- Life Cycle function
@@ -53,11 +53,6 @@ final class StockViewController: UIViewController {
     }
     
     private func configureStepper() {
-        strawberryStepper.fruit = .strawberry
-        bananaStepper.fruit = .banana
-        pineappleStepper.fruit = .pineapple
-        kiwiStepper.fruit = .kiwi
-        mangoStepper.fruit = .mango
         strawberryStepper.value = juiceMaker.readStock(of: .strawberry)
         bananaStepper.value = juiceMaker.readStock(of: .banana)
         pineappleStepper.value = juiceMaker.readStock(of: .pineapple)
@@ -78,8 +73,8 @@ final class StockViewController: UIViewController {
     }
     
     //MARK:-- @IBAction Function
-    @IBAction func touchStepper(_ sender: StockStepper) {
-        guard let fruit = sender.fruit else { return }
+    @IBAction func touchStepper(_ sender: UIStepper) {
+        let fruit = classifyFruit(sender)
         let value = String(Int(sender.value))
         switch fruit {
         case .strawberry:
@@ -92,6 +87,20 @@ final class StockViewController: UIViewController {
             kiwiCountLabel.text = value
         case .mango:
             mangoCountLabel.text = value
+        }
+    }
+    
+    private func classifyFruit(_ stepper: UIStepper) -> Fruit {
+        if stepper == strawberryStepper {
+            return .strawberry
+        } else if stepper == bananaStepper {
+            return .banana
+        } else if stepper == pineappleStepper {
+            return .pineapple
+        } else if stepper == kiwiStepper {
+            return .kiwi
+        } else {
+            return .mango
         }
     }
 }

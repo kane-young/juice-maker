@@ -13,13 +13,13 @@ final class CounterViewController: UIViewController {
     @IBOutlet private weak var pineappleCountLabel: UILabel!
     @IBOutlet private weak var kiwiCountLabel: UILabel!
     @IBOutlet private weak var mangoCountLabel: UILabel!
-    @IBOutlet private weak var orderStrawberryBananaJuiceButton: OrderJuiceButton!
-    @IBOutlet private weak var orderStrawberryJuiceButton: OrderJuiceButton!
-    @IBOutlet private weak var orderBananaJuiceButton: OrderJuiceButton!
-    @IBOutlet private weak var orderPineappleJuiceButton: OrderJuiceButton!
-    @IBOutlet private weak var orderMangoKiwiJuiceButton: OrderJuiceButton!
-    @IBOutlet private weak var orderKiwiJuiceButton: OrderJuiceButton!
-    @IBOutlet private weak var orderMangoJuiceButton: OrderJuiceButton!
+    @IBOutlet private weak var orderStrawberryBananaJuiceButton: UIButton!
+    @IBOutlet private weak var orderStrawberryJuiceButton: UIButton!
+    @IBOutlet private weak var orderBananaJuiceButton: UIButton!
+    @IBOutlet private weak var orderPineappleJuiceButton: UIButton!
+    @IBOutlet private weak var orderMangoKiwiJuiceButton: UIButton!
+    @IBOutlet private weak var orderKiwiJuiceButton: UIButton!
+    @IBOutlet private weak var orderMangoJuiceButton: UIButton!
     private let juiceMaker: JuiceMaker = JuiceMaker.shared
 
     //MARK:-- Life Cycle function
@@ -42,8 +42,8 @@ final class CounterViewController: UIViewController {
       self.navigationController?.pushViewController(stockVC, animated: true)
     }
 
-    @IBAction private func orderJuice(_ sender: OrderJuiceButton) {
-        guard let juice = sender.juice else { return }
+    @IBAction private func orderJuice(_ sender: UIButton) {
+        let juice = classifyButton(sender)
         do {
             try juiceMaker.makeJuice(using: juice)
             alertOfSuccess(juice: juice)
@@ -52,6 +52,25 @@ final class CounterViewController: UIViewController {
         }
         for (fruit, _) in juice.recipe {
             updateFruitCountLabel(fruit)
+        }
+    }
+    
+    private func classifyButton(_ button: UIButton) -> Juice {
+        switch button {
+        case orderStrawberryJuiceButton:
+            return .strawberry
+        case orderStrawberryBananaJuiceButton:
+            return .strawberryBanana
+        case orderBananaJuiceButton:
+            return .banana
+        case orderPineappleJuiceButton:
+            return .pineapple
+        case orderKiwiJuiceButton:
+            return .kiwi
+        case orderMangoKiwiJuiceButton:
+            return .mangokiwi
+        default:
+            return .mango
         }
     }
 
@@ -67,13 +86,6 @@ final class CounterViewController: UIViewController {
     }
     
     private func configureButtons() {
-        orderStrawberryJuiceButton.juice = .strawberry
-        orderBananaJuiceButton.juice = .banana
-        orderStrawberryBananaJuiceButton.juice = .strawberryBanana
-        orderKiwiJuiceButton.juice = .kiwi
-        orderMangoJuiceButton.juice = .mango
-        orderMangoKiwiJuiceButton.juice = .mangokiwi
-        orderPineappleJuiceButton.juice = .pineapple
         orderStrawberryJuiceButton.titleLabel?.adjustsFontSizeToFitWidth = true
         orderBananaJuiceButton.titleLabel?.adjustsFontSizeToFitWidth = true
         orderStrawberryBananaJuiceButton.titleLabel?.adjustsFontSizeToFitWidth = true
