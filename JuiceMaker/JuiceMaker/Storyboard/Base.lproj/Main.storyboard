@@ -21,7 +21,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="fCg-OH-LBK">
                                         <rect key="frame" x="0.0" y="0.0" width="141.66666666666666" height="174.66666666666666"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="딸기" translatesAutoresizingMaskIntoConstraints="NO" id="Gkd-xq-wUY">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="딸기" translatesAutoresizingMaskIntoConstraints="NO" id="Gkd-xq-wUY">
                                                 <rect key="frame" x="0.0" y="0.0" width="141.66666666666666" height="141.66666666666666"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="Gkd-xq-wUY" secondAttribute="height" multiplier="1:1" id="V4i-3e-N8v"/>
@@ -39,7 +39,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="3NV-Jp-rvq">
                                         <rect key="frame" x="161.66666666666669" y="0.0" width="141.66666666666669" height="174.66666666666666"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="바나나" translatesAutoresizingMaskIntoConstraints="NO" id="Inl-jm-fVg">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="바나나" translatesAutoresizingMaskIntoConstraints="NO" id="Inl-jm-fVg">
                                                 <rect key="frame" x="0.0" y="0.0" width="141.66666666666666" height="141.66666666666666"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="Inl-jm-fVg" secondAttribute="height" multiplier="1:1" id="mWK-zg-G0t"/>
@@ -57,7 +57,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="LjK-OZ-zVs">
                                         <rect key="frame" x="323.33333333333331" y="0.0" width="141.33333333333331" height="174.66666666666666"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="파인애플" translatesAutoresizingMaskIntoConstraints="NO" id="P0J-Jv-GGJ">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="파인애플" translatesAutoresizingMaskIntoConstraints="NO" id="P0J-Jv-GGJ">
                                                 <rect key="frame" x="0.0" y="0.0" width="141.33333333333334" height="141.66666666666666"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="P0J-Jv-GGJ" secondAttribute="height" multiplier="1:1" id="VRC-sw-cne"/>
@@ -75,7 +75,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="SVa-W8-xYZ">
                                         <rect key="frame" x="484.66666666666669" y="0.0" width="141.66666666666669" height="174.66666666666666"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="키위" translatesAutoresizingMaskIntoConstraints="NO" id="4aU-yC-Mwl">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="키위" translatesAutoresizingMaskIntoConstraints="NO" id="4aU-yC-Mwl">
                                                 <rect key="frame" x="0.0" y="0.0" width="141.66666666666666" height="141.66666666666666"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="4aU-yC-Mwl" secondAttribute="height" multiplier="1:1" id="bCK-ee-S2y"/>
@@ -93,7 +93,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="hRe-UN-omS">
                                         <rect key="frame" x="646.33333333333337" y="0.0" width="141.66666666666663" height="174.66666666666666"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="망고" translatesAutoresizingMaskIntoConstraints="NO" id="vnx-eO-HHB">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="망고" translatesAutoresizingMaskIntoConstraints="NO" id="vnx-eO-HHB">
                                                 <rect key="frame" x="0.0" y="0.0" width="141.66666666666666" height="141.66666666666666"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="vnx-eO-HHB" secondAttribute="height" multiplier="1:1" id="Dtr-ey-pKg"/>
@@ -254,7 +254,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="gTg-HZ-IUM">
                                         <rect key="frame" x="0.0" y="0.0" width="141.66666666666666" height="174.66666666666666"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="딸기" translatesAutoresizingMaskIntoConstraints="NO" id="DOZ-Ns-6M0">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="딸기" translatesAutoresizingMaskIntoConstraints="NO" id="DOZ-Ns-6M0">
                                                 <rect key="frame" x="0.0" y="0.0" width="141.66666666666666" height="141.66666666666666"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="DOZ-Ns-6M0" secondAttribute="height" multiplier="1:1" id="Y9y-fS-RBg"/>
@@ -272,7 +272,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="sq1-z7-8pH">
                                         <rect key="frame" x="161.66666666666669" y="0.0" width="141.66666666666669" height="174.66666666666666"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="바나나" translatesAutoresizingMaskIntoConstraints="NO" id="FtO-3E-ixg">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="바나나" translatesAutoresizingMaskIntoConstraints="NO" id="FtO-3E-ixg">
                                                 <rect key="frame" x="0.0" y="0.0" width="141.66666666666666" height="141.66666666666666"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="FtO-3E-ixg" secondAttribute="height" multiplier="1:1" id="CwN-SZ-hln"/>
@@ -290,7 +290,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="zYl-FG-KSh">
                                         <rect key="frame" x="323.33333333333331" y="0.0" width="141.33333333333331" height="174.66666666666666"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="파인애플" translatesAutoresizingMaskIntoConstraints="NO" id="iCs-pT-ONk">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="파인애플" translatesAutoresizingMaskIntoConstraints="NO" id="iCs-pT-ONk">
                                                 <rect key="frame" x="0.0" y="0.0" width="141.33333333333334" height="141.66666666666666"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="iCs-pT-ONk" secondAttribute="height" multiplier="1:1" id="fyR-1T-Nbs"/>
@@ -308,7 +308,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="JAR-6P-J72">
                                         <rect key="frame" x="484.66666666666669" y="0.0" width="141.66666666666669" height="174.66666666666666"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="키위" translatesAutoresizingMaskIntoConstraints="NO" id="GQb-A6-mC6">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="키위" translatesAutoresizingMaskIntoConstraints="NO" id="GQb-A6-mC6">
                                                 <rect key="frame" x="0.0" y="0.0" width="141.66666666666666" height="141.66666666666666"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="GQb-A6-mC6" secondAttribute="height" multiplier="1:1" id="dkS-KE-Jjm"/>
@@ -326,7 +326,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="lLB-fu-KzM">
                                         <rect key="frame" x="646.33333333333337" y="0.0" width="141.66666666666663" height="174.66666666666666"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="망고" translatesAutoresizingMaskIntoConstraints="NO" id="Uwu-en-3Ze">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="망고" translatesAutoresizingMaskIntoConstraints="NO" id="Uwu-en-3Ze">
                                                 <rect key="frame" x="0.0" y="0.0" width="141.66666666666666" height="141.66666666666666"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="Uwu-en-3Ze" secondAttribute="height" multiplier="1:1" id="yi6-EX-Q9q"/>
@@ -429,10 +429,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="딸기" width="450" height="435"/>
-        <image name="망고" width="500" height="499"/>
-        <image name="바나나" width="512" height="404"/>
-        <image name="키위" width="500" height="500"/>
-        <image name="파인애플" width="432" height="577"/>
+        <image name="딸기" width="450" height="435"/>
+        <image name="망고" width="500" height="499"/>
+        <image name="바나나" width="512" height="404"/>
+        <image name="키위" width="500" height="500"/>
+        <image name="파인애플" width="432" height="577"/>
     </resources>
 </document>
