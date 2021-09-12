@@ -36,10 +36,10 @@ final class CounterViewController: UIViewController {
 
     //MARK:-- @IBAction Function
     @IBAction private func moveStock(_ sender: Any) {
-        guard let stockVC = self.storyboard?.instantiateViewController(identifier: "stockVC") else {
+        guard let stockViewController = self.storyboard?.instantiateViewController(identifier: StockViewController.identifier) else {
             return
         }
-      self.navigationController?.pushViewController(stockVC, animated: true)
+      self.navigationController?.pushViewController(stockViewController, animated: true)
     }
 
     @IBAction private func orderJuice(_ sender: UIButton) {

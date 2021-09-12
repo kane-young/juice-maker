@@ -8,6 +8,11 @@
 import UIKit
 
 final class StockViewController: UIViewController {
+    static let identifier: String = "StockViewController"
+    private enum Style {
+        static let rightButtonTitle = "취소"
+        static let navigationTitle = "재고 추가"
+    }
     //MARK:-- @IBOutlet Properties
     @IBOutlet private weak var strawberryCountLabel: UILabel!
     @IBOutlet private weak var bananaCountLabel: UILabel!
@@ -37,10 +42,10 @@ final class StockViewController: UIViewController {
     //MARK:-- initialize function
     private func configureNavigationController() {
         let rightBarButtonItem = UIBarButtonItem(image: nil, style: .plain, target: self, action: #selector(touchUpClosedButton))
-        rightBarButtonItem.title = "취소"
+        rightBarButtonItem.title = Style.rightButtonTitle
         rightBarButtonItem.action = #selector(touchUpClosedButton)
         self.navigationItem.hidesBackButton = true
-        self.navigationItem.title = "재고 추가"
+        self.navigationItem.title = Style.navigationTitle
         self.navigationItem.rightBarButtonItem = rightBarButtonItem
     }
     
