@@ -27,8 +27,20 @@ class JuiceMaker {
     func readStock(of fruit: Fruit) -> UInt {
         return stock.readCount(of: fruit)
     }
+    
+    func readStock(of fruit: Fruit) -> Double {
+        return Double(stock.readCount(of: fruit))
+    }
+    
+    func readStock(of fruit: Fruit) -> String {
+        return String(stock.readCount(of: fruit))
+    }
 
     func updateStock(fruit: Fruit, count: UInt) {
         stock.updateStock(of: fruit, count: count)
+    }
+    
+    func updateStock(fruit: Fruit, count: Double) {
+        stock.updateStock(of: fruit, count: UInt(count))
     }
 }

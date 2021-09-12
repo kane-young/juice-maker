@@ -45,11 +45,11 @@ final class StockViewController: UIViewController {
     }
     
     private func updateStock() {
-        juiceMaker.updateStock(fruit: .strawberry, count: UInt(strawberryStepper.value))
-        juiceMaker.updateStock(fruit: .banana, count: UInt(bananaStepper.value))
-        juiceMaker.updateStock(fruit: .pineapple, count: UInt(pineappleStepper.value))
-        juiceMaker.updateStock(fruit: .kiwi, count: UInt(kiwiStepper.value))
-        juiceMaker.updateStock(fruit: .mango, count: UInt(mangoStepper.value))
+        juiceMaker.updateStock(fruit: .strawberry, count: strawberryStepper.value)
+        juiceMaker.updateStock(fruit: .banana, count: bananaStepper.value)
+        juiceMaker.updateStock(fruit: .pineapple, count: pineappleStepper.value)
+        juiceMaker.updateStock(fruit: .kiwi, count: kiwiStepper.value)
+        juiceMaker.updateStock(fruit: .mango, count: mangoStepper.value)
     }
     
     private func configureStepper() {
@@ -58,20 +58,19 @@ final class StockViewController: UIViewController {
         pineappleStepper.fruit = .pineapple
         kiwiStepper.fruit = .kiwi
         mangoStepper.fruit = .mango
-        strawberryStepper.value = Double(juiceMaker.readStock(of: .strawberry))
-        bananaStepper.value = Double(juiceMaker.readStock(of: .banana))
-        pineappleStepper.value = Double(juiceMaker.readStock(of: .pineapple))
-        kiwiStepper.value = Double(juiceMaker.readStock(of: .kiwi))
-        mangoStepper.value = Double(juiceMaker.readStock(of: .mango))
+        strawberryStepper.value = juiceMaker.readStock(of: .strawberry)
+        bananaStepper.value = juiceMaker.readStock(of: .banana)
+        pineappleStepper.value = juiceMaker.readStock(of: .pineapple)
+        kiwiStepper.value = juiceMaker.readStock(of: .kiwi)
+        mangoStepper.value = juiceMaker.readStock(of: .mango)
     }
     
     private func configureFruitCountLabel() {
-        strawberryCountLabel.text = String(JuiceMaker.shared.readStock(of: .strawberry))
-        bananaCountLabel.text = String(JuiceMaker.shared
-                                        .readStock(of: .banana))
-        kiwiCountLabel.text = String(JuiceMaker.shared.readStock(of: .kiwi))
-        pineappleCountLabel.text = String(JuiceMaker.shared.readStock(of: .pineapple))
-        mangoCountLabel.text = String(JuiceMaker.shared.readStock(of: .mango))
+        strawberryCountLabel.text = juiceMaker.readStock(of: .strawberry)
+        bananaCountLabel.text = juiceMaker.readStock(of: .banana)
+        kiwiCountLabel.text = juiceMaker.readStock(of: .kiwi)
+        pineappleCountLabel.text = juiceMaker.readStock(of: .pineapple)
+        mangoCountLabel.text = juiceMaker.readStock(of: .mango)
     }
     
     @objc private func touchUpClosedButton() {
@@ -81,17 +80,18 @@ final class StockViewController: UIViewController {
     //MARK:-- @IBAction Function
     @IBAction func touchStepper(_ sender: StockStepper) {
         guard let fruit = sender.fruit else { return }
+        let value = String(Int(sender.value))
         switch fruit {
         case .strawberry:
-            strawberryCountLabel.text = String(Int(sender.value))
+            strawberryCountLabel.text = value
         case .banana:
-            bananaCountLabel.text = String(Int(sender.value))
+            bananaCountLabel.text = value
         case .pineapple:
-            pineappleCountLabel.text = String(Int(sender.value))
+            pineappleCountLabel.text = value
         case .kiwi:
-            kiwiCountLabel.text = String(Int(sender.value))
+            kiwiCountLabel.text = value
         case .mango:
-            mangoCountLabel.text = String(Int(sender.value))
+            mangoCountLabel.text = value
         }
     }
 }
