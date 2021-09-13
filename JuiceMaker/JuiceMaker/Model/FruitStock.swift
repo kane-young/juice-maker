@@ -34,7 +34,7 @@ struct FruitStock {
         remainedFruit[fruit]?.count = count
     }
 
-    func readCount(of fruit: Fruit) -> UInt {
+    func count(of fruit: Fruit) -> UInt {
         if let storedFruit = remainedFruit[fruit] {
             return storedFruit.count
         } else {

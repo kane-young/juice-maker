@@ -19,7 +19,7 @@ extension UIViewController {
         let alert = UIAlertController(title: "재료가 모자라요", message: "재고를 수정할까요?", preferredStyle: .alert)
         let ok = UIAlertAction(title: "예", style: .default) { _ in
             let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
-            let stockView = mainStoryboard.instantiateViewController(identifier: "stockVC")
+            let stockView = mainStoryboard.instantiateViewController(identifier: StockViewController.identifier)
             self.navigationController?.pushViewController(stockView, animated: true)
         }
         let cancel = UIAlertAction(title: "아니오", style: .cancel)

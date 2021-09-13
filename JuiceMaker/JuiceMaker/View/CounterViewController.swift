@@ -98,23 +98,23 @@ final class CounterViewController: UIViewController {
     private func updateFruitCountLabel(_ fruit: Fruit) {
         switch fruit {
         case .strawberry:
-            strawberryCountLabel.text = juiceMaker.readStock(of: .strawberry)
+            strawberryCountLabel.text = juiceMaker.count(of: .strawberry)
         case .banana:
-            bananaCountLabel.text = juiceMaker.readStock(of: .banana)
+            bananaCountLabel.text = juiceMaker.count(of: .banana)
         case .pineapple:
-            pineappleCountLabel.text = juiceMaker.readStock(of: .pineapple)
+            pineappleCountLabel.text = juiceMaker.count(of: .pineapple)
         case .kiwi:
-            kiwiCountLabel.text = juiceMaker.readStock(of: .kiwi)
+            kiwiCountLabel.text = juiceMaker.count(of: .kiwi)
         case .mango:
-            mangoCountLabel.text = juiceMaker.readStock(of: .mango)
+            mangoCountLabel.text = juiceMaker.count(of: .mango)
         }
     }
 
     private func updateFruitCount() {
-        strawberryCountLabel.text = juiceMaker.readStock(of: .strawberry)
-        bananaCountLabel.text = juiceMaker.readStock(of: .banana)
-        kiwiCountLabel.text = juiceMaker.readStock(of: .kiwi)
-        pineappleCountLabel.text = juiceMaker.readStock(of: .pineapple)
-        mangoCountLabel.text = juiceMaker.readStock(of: .mango)
+        strawberryCountLabel.text = juiceMaker.count(of: .strawberry)
+        bananaCountLabel.text = juiceMaker.count(of: .banana)
+        kiwiCountLabel.text = juiceMaker.count(of: .kiwi)
+        pineappleCountLabel.text = juiceMaker.count(of: .pineapple)
+        mangoCountLabel.text = juiceMaker.count(of: .mango)
     }
 }

@@ -58,19 +58,19 @@ final class StockViewController: UIViewController {
     }
     
     private func configureStepper() {
-        strawberryStepper.value = juiceMaker.readStock(of: .strawberry)
-        bananaStepper.value = juiceMaker.readStock(of: .banana)
-        pineappleStepper.value = juiceMaker.readStock(of: .pineapple)
-        kiwiStepper.value = juiceMaker.readStock(of: .kiwi)
-        mangoStepper.value = juiceMaker.readStock(of: .mango)
+        strawberryStepper.value = juiceMaker.count(of: .strawberry)
+        bananaStepper.value = juiceMaker.count(of: .banana)
+        pineappleStepper.value = juiceMaker.count(of: .pineapple)
+        kiwiStepper.value = juiceMaker.count(of: .kiwi)
+        mangoStepper.value = juiceMaker.count(of: .mango)
     }
     
     private func configureFruitCountLabel() {
-        strawberryCountLabel.text = juiceMaker.readStock(of: .strawberry)
-        bananaCountLabel.text = juiceMaker.readStock(of: .banana)
-        kiwiCountLabel.text = juiceMaker.readStock(of: .kiwi)
-        pineappleCountLabel.text = juiceMaker.readStock(of: .pineapple)
-        mangoCountLabel.text = juiceMaker.readStock(of: .mango)
+        strawberryCountLabel.text = juiceMaker.count(of: .strawberry)
+        bananaCountLabel.text = juiceMaker.count(of: .banana)
+        kiwiCountLabel.text = juiceMaker.count(of: .kiwi)
+        pineappleCountLabel.text = juiceMaker.count(of: .pineapple)
+        mangoCountLabel.text = juiceMaker.count(of: .mango)
     }
     
     @objc private func touchUpClosedButton() {
