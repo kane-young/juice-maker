@@ -8,7 +8,7 @@
 import Foundation
 
 struct FruitStock {
-    private var remainedFruit: FruitCount
+    private var remainedFruit: FruitInfos
 
     init(initialCount: UInt) {
         remainedFruit = [.strawberry: FruitInformation(count: initialCount),

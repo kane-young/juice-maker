@@ -7,7 +7,7 @@
 
 import Foundation
 
-typealias FruitCount = [Fruit: FruitInformation]
+typealias FruitInfos = [Fruit: FruitInformation]
 
 enum Juice: CustomStringConvertible {
     case strawberry
@@ -37,7 +37,7 @@ enum Juice: CustomStringConvertible {
         }
     }
     
-    var recipe: FruitCount {
+    var recipe: FruitInfos {
         switch self {
         case .strawberry:
             return [.strawberry: FruitInformation(count: 16)]
