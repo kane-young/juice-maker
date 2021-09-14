@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--맛있는 쥬스를 만들어 드려요!-->
+        <!--Counter View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="CounterViewController" customModule="JuiceMaker" customModuleProvider="target" sceneMemberID="viewController">
@@ -217,10 +217,10 @@
                             <constraint firstItem="aax-zC-FqZ" firstAttribute="leading" secondItem="ghS-vv-UcU" secondAttribute="leading" id="xNr-1r-KRz"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="맛있는 쥬스를 만들어 드려요!" id="gRa-eP-KMK">
-                        <barButtonItem key="rightBarButtonItem" title="재고 수정" id="dQ5-1w-n4C">
+                    <navigationItem key="navigationItem" id="nHA-Yg-Grn">
+                        <barButtonItem key="rightBarButtonItem" title="재고 수정" id="ce9-Zm-xUS">
                             <connections>
-                                <action selector="touchManageStock:" destination="BYZ-38-t0r" id="J8A-hw-gZ7"/>
+                                <action selector="moveStock:" destination="BYZ-38-t0r" id="ggX-1Z-fJH"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

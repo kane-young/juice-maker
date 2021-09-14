@@ -25,6 +25,7 @@ final class CounterViewController: UIViewController {
     //MARK:-- Life Cycle function
     override func viewDidLoad() {
         super.viewDidLoad()
+        configureNavigationBar()
         configureButtons()
         configureButtonsAccessibility()
     }
@@ -75,6 +76,10 @@ final class CounterViewController: UIViewController {
     }
 
     //MARK:-- initialize function
+    private func configureNavigationBar() {
+        self.navigationItem.title = "맛있는 쥬스를 만들어 드려요!"
+    }
+    
     private func configureButtonsAccessibility() {
         orderStrawberryJuiceButton.titleLabel?.adjustsFontForContentSizeCategory = true
         orderStrawberryBananaJuiceButton.titleLabel?.adjustsFontForContentSizeCategory = true
