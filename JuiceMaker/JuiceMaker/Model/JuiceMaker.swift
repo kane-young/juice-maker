@@ -12,7 +12,7 @@ class JuiceMaker {
     
     private init() { }
     
-    func makeJuice(using juice: Juice) throws {
+    func order(juice: Juice) throws {
         let isSatisfied = juice.recipe.allSatisfy { (ingredient: Fruit, information: FruitInformation) in
             return stock.count(of: ingredient) >= information.count
         }
@@ -20,7 +20,7 @@ class JuiceMaker {
             throw JuiceMakerError.outOfStock
         }
         for (ingredient, information) in juice.recipe {
-            stock.subtractStock(of: ingredient, count: information.count)
+            stock.subtract(fruit: ingredient, count: information.count)
         }
     }
     
@@ -36,11 +36,11 @@ class JuiceMaker {
         return String(stock.count(of: fruit))
     }
 
-    func updateStock(fruit: Fruit, count: UInt) {
-        stock.updateStock(of: fruit, count: count)
+    func updateStock(of fruit: Fruit, count: UInt) {
+        stock.update(fruit: fruit, count: count)
     }
     
-    func updateStock(fruit: Fruit, count: Double) {
-        stock.updateStock(of: fruit, count: UInt(count))
+    func updateStock(of fruit: Fruit, count: Double) {
+        stock.update(fruit: fruit, count: UInt(count))
     }
 }

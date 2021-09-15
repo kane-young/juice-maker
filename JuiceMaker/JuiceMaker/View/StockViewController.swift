@@ -50,11 +50,11 @@ final class StockViewController: UIViewController {
     }
     
     private func updateStock() {
-        juiceMaker.updateStock(fruit: .strawberry, count: strawberryStepper.value)
-        juiceMaker.updateStock(fruit: .banana, count: bananaStepper.value)
-        juiceMaker.updateStock(fruit: .pineapple, count: pineappleStepper.value)
-        juiceMaker.updateStock(fruit: .kiwi, count: kiwiStepper.value)
-        juiceMaker.updateStock(fruit: .mango, count: mangoStepper.value)
+        juiceMaker.updateStock(of: .strawberry, count: strawberryStepper.value)
+        juiceMaker.updateStock(of: .banana, count: bananaStepper.value)
+        juiceMaker.updateStock(of: .pineapple, count: pineappleStepper.value)
+        juiceMaker.updateStock(of: .kiwi, count: kiwiStepper.value)
+        juiceMaker.updateStock(of: .mango, count: mangoStepper.value)
     }
     
     private func configureStepper() {

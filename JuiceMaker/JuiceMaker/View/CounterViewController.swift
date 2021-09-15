@@ -46,7 +46,7 @@ final class CounterViewController: UIViewController {
     @IBAction private func orderJuice(_ sender: UIButton) {
         let juice = classifyButton(sender)
         do {
-            try juiceMaker.makeJuice(using: juice)
+            try juiceMaker.order(juice: juice)
             alertOfSuccess(juice: juice)
         } catch {
             alertOfFail()

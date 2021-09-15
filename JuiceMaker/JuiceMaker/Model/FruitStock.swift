@@ -18,19 +18,19 @@ struct FruitStock {
                          .mango: FruitInformation(count: initialCount)]
     }
 
-    mutating func addStock(of fruit: Fruit, count: UInt) {
+    mutating func add(fruit: Fruit, count: UInt) {
         if let storedFruit = remainedFruit[fruit] {
             remainedFruit[fruit]?.count = storedFruit.count + count
         }
     }
 
-    mutating func subtractStock(of fruit: Fruit, count: UInt) {
+    mutating func subtract(fruit: Fruit, count: UInt) {
         if let storedFruit = remainedFruit[fruit] {
             remainedFruit[fruit]?.count = storedFruit.count - count
         }
     }
     
-    mutating func updateStock(of fruit: Fruit, count: UInt) {
+    mutating func update(fruit: Fruit, count: UInt) {
         remainedFruit[fruit]?.count = count
     }
 
