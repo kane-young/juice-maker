@@ -78,7 +78,7 @@ final class StockViewController: UIViewController {
     }
     
     //MARK:-- @IBAction Function
-    @IBAction func touchStepper(_ sender: UIStepper) {
+    @IBAction func changedStepperValue(_ sender: UIStepper) {
         let fruit = classifyFruit(sender)
         let value = String(Int(sender.value))
         switch fruit {

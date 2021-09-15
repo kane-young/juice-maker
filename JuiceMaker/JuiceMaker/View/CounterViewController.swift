@@ -36,7 +36,7 @@ final class CounterViewController: UIViewController {
     }
 
     //MARK:-- @IBAction Function
-    @IBAction private func moveStock(_ sender: Any) {
+    @IBAction private func touchRightBarButton(_ sender: Any) {
         guard let stockViewController = self.storyboard?.instantiateViewController(identifier: StockViewController.identifier) else {
             return
         }

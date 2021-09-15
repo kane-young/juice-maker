@@ -220,7 +220,7 @@
                     <navigationItem key="navigationItem" id="nHA-Yg-Grn">
                         <barButtonItem key="rightBarButtonItem" title="재고 수정" id="ce9-Zm-xUS">
                             <connections>
-                                <action selector="moveStock:" destination="BYZ-38-t0r" id="ggX-1Z-fJH"/>
+                                <action selector="touchRightBarButton:" destination="BYZ-38-t0r" id="ggX-1Z-fJH"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -349,31 +349,31 @@
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="WH3-vS-Sjd">
                                 <rect key="frame" x="77.666666666666671" y="214.66666666666666" width="94.000000000000014" height="32"/>
                                 <connections>
-                                    <action selector="touchStepper:" destination="OM7-Cs-7Nc" eventType="valueChanged" id="DwI-gg-0KW"/>
+                                    <action selector="changedStepperValue:" destination="OM7-Cs-7Nc" eventType="valueChanged" id="DwI-gg-0KW"/>
                                 </connections>
                             </stepper>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="BBp-Oc-KsE">
                                 <rect key="frame" x="239.33333333333337" y="214.66666666666666" width="94" height="32"/>
                                 <connections>
-                                    <action selector="touchStepper:" destination="OM7-Cs-7Nc" eventType="valueChanged" id="BOd-lc-5an"/>
+                                    <action selector="changedStepperValue:" destination="OM7-Cs-7Nc" eventType="valueChanged" id="BOd-lc-5an"/>
                                 </connections>
                             </stepper>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="IFe-JF-UHe">
                                 <rect key="frame" x="562.66666666666663" y="214.66666666666666" width="94" height="32"/>
                                 <connections>
-                                    <action selector="touchStepper:" destination="OM7-Cs-7Nc" eventType="valueChanged" id="qHU-Fa-tzh"/>
+                                    <action selector="changedStepperValue:" destination="OM7-Cs-7Nc" eventType="valueChanged" id="qHU-Fa-tzh"/>
                                 </connections>
                             </stepper>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="9Bf-7f-aP4">
                                 <rect key="frame" x="724.33333333333337" y="214.66666666666666" width="94" height="32"/>
                                 <connections>
-                                    <action selector="touchStepper:" destination="OM7-Cs-7Nc" eventType="valueChanged" id="RnI-nG-qrq"/>
+                                    <action selector="changedStepperValue:" destination="OM7-Cs-7Nc" eventType="valueChanged" id="RnI-nG-qrq"/>
                                 </connections>
                             </stepper>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="ziU-bo-6JF">
                                 <rect key="frame" x="401" y="214.66666666666666" width="94" height="32"/>
                                 <connections>
-                                    <action selector="touchStepper:" destination="OM7-Cs-7Nc" eventType="valueChanged" id="AjR-9r-b8o"/>
+                                    <action selector="changedStepperValue:" destination="OM7-Cs-7Nc" eventType="valueChanged" id="AjR-9r-b8o"/>
                                 </connections>
                             </stepper>
                         </subviews>
